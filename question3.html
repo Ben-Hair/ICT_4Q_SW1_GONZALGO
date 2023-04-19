@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hardest Quiz in The World</title>
+	<link rel="stylesheet" type="text/css" href="sw1css.css">
+</head>
+<body>
+	<div class="quiz">
+		<h1>Question 3</h1>
+		<div class="question">
+			<h2>What is the largest country?</h2>
+			<div>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">San Marino</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Canada</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="question4.html">Russia</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Lithuania</button>
+			</div>
+		</div>
+	</div>
+<script>
+	function gotoLink(link){
+		console.log(link.value)
+		location.href = link.value
+	};
+
+	alert("You got it right!")
+</script>
+</body>
+</html>

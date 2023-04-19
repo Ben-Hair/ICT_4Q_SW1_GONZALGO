@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Mansion</title>
+	<link rel="stylesheet" type="text/css" href="sw1css.css">
+</head>
+<body>
+	<div class="quiz">
+		<h1>Question 5</h1>
+		<div class="question">
+			<h2>What is the powerhouse of the cell?</h2>
+			<div>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Ribosome</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Matrix</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="winner.html">Mitochondria</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Nucleus</button>
+			</div>
+		</div>
+	</div>
+<script>
+	function gotoLink(link){
+		console.log(link.value)
+		location.href = link.value
+	};
+
+	alert("You got it right!")
+</script>
+</body>
+</html>

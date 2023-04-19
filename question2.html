@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hardest Quiz in The World</title>
+	<link rel="stylesheet" type="text/css" href="sw1css.css">
+</head>
+<body>
+	<div class="quiz">
+		<h1>Question 2</h1>
+		<div class="question">
+			<h2>What is the largest body of water?</h2>
+			<div>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Lake</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Pond</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">River</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="question3.html">Ocean</button>
+			</div>
+		</div>
+	</div>
+<script>
+	function gotoLink(link){
+		console.log(link.value)
+		location.href = link.value
+	};
+
+	alert("You got it right!")
+</script>
+</body>
+</html>

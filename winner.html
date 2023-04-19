@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Mansion</title>
+	<link rel="stylesheet" type="text/css" href="sw1css.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+<body>
+	<div class="quiz">
+		<h1>You Won!</h1>
+		<div class="ready">
+			<h2>You got all questions correct, do you feel smart?</h2>
+			<div>
+				<a href="FAIRVIEW_ICT9Sapphire_Q3SW1_Gonzalgo.html">
+					<button class="btn">Redo Quiz</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="./confetti.js"></script> 
+	<script>
+		const start = () => {
+			setTimeout(function(){
+				confetti.start();
+			});
+		};
+
+		start();
+	</script>
+
+<!-- Reference for Confetti:
+Coding Fire(2021, March 22) Confetti Effect using html css and javascript. Retrieved from: https://www.youtube.com/watch?v=quSR_ZrVz6Y  -->
+
+</body>
+</html>

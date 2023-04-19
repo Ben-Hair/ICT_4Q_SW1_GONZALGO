@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hardest Quiz in The World</title>
+	<link rel="stylesheet" type="text/css" href="sw1css.css">
+</head>
+<body>
+	<div class="quiz">
+		<h1>Question 4</h1>
+		<div class="question">
+			<h2>What is the best subject?</h2>
+			<div>
+				<button class="question-btn" onclick="gotoLink(this)" value="question5.html">ICT</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Math</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">English</button>
+				<button class="question-btn" onclick="gotoLink(this)" value="fail.html">Science</button>
+			</div>
+		</div>
+	</div>
+<script>
+	function gotoLink(link){
+		console.log(link.value)
+		location.href = link.value
+	};
+
+	alert("You got it right!")
+</script>
+</body>
+</html>
